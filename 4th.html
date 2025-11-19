@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" width="50%" align="center">
+        <tr>
+            <td>first number</td>
+            <td><input type="text" name="" id="first"></td>
+        </tr>
+        <tr>
+            <td>second number</td>
+            <td><input type="text" name="" id="second"></td>
+        </tr>
+        <tr>
+            <td>third number</td>
+            <td><input type="text" name="" id="third"></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="button" value="sum" style="background-color: blueviolet; color: white; " onclick="sum();">
+            </td>
+        </tr>
+    </table>
+    <script>
+        function sum() {
+            let first = document.getElementById("first").value;
+            let second = document.getElementById("second").value;
+            let third = document.getElementById("third").value;
+            let sum = parseInt(first) + parseInt(second) + parseInt(third);
+            alert(sum);
+        }
+    </script>
+     <table border="1" width="50%" align="center">
+        <tr>
+            <td>first number</td>
+            <td><input type="text" name="" id="n1"></td>
+        </tr>
+        <tr>
+            <td>second number</td>
+            <td><input type="text" name="" id="n2"></td>
+        </tr>
+         <tr>
+            <td colspan="2" align="center">
+                <input type="button" value="difference" style="background-color: blueviolet; color: white; " onclick="difference();">
+            </td>
+        </tr>
+        </table>
+
+    <script>
+        function difference() {
+            let n1 = document.getElementById("n1").value;
+            let n2 = document.getElementById("n2").value;
+
+            let difference = parseInt(n1) - parseInt(n2);
+            alert(difference);
+        }
+    </script>
+
+     </script>
+     <table border="1" width="50%" align="center">
+        <tr>
+            <td>first number</td>
+            <td><input type="text" name="" id="a"></td>
+        </tr>
+        <tr>
+            <td>second number</td>
+            <td><input type="text" name="" id="b"></td>
+        </tr>
+         <tr>
+            <td colspan="2" align="center">
+                <input type="button" value="product" style="background-color: blueviolet; color: white; " onclick="product();">
+            </td>
+        </tr>
+        </table>
+
+    <script>
+        function product() {
+            let a = document.getElementById("a").value;
+            let b = document.getElementById("b").value;
+
+            let product = parseInt(a) * parseInt(b);
+            alert(product);
+        }
+    </script>
+     </script>
+     <table border="1" width="50%" align="center">
+        <tr>
+            <td>first number</td>
+            <td><input type="text" name="" id="x"></td>
+        </tr>
+        <tr>
+            <td>second number</td>
+            <td><input type="text" name="" id="y"></td>
+        </tr>
+         <tr>
+            <td colspan="2" align="center">
+                <input type="button" value="div" style="background-color: blueviolet; color: white; " onclick="div();">
+            </td>
+        </tr>
+        </table>
+
+    <script>
+        function div() {
+            let x = document.getElementById("x").value;
+            let y = document.getElementById("y").value;
+
+            let div = parseInt(x) / parseInt(y);
+            alert(div);
+        }
+    </script>
+</body>
+</html>

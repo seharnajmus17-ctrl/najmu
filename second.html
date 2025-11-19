@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 style="font-size: xx-large;color: blueviolet;">CATS</h1>
+    <h2>heading 2</h2>
+    <h3>heading 3</h3>
+    <h4>heading 4</h4>
+    <h5>heading 5</h5>
+    <h6>heading 6</h6>
+    <img src="https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_1280.jpg" style="height:300px;width:300px;" />
+    <a href="https://www.instagram.com/">click to get account</a>
+    <table border="1" width="80%" align="center">
+        <tr>
+            <th style="font-size: medium; color: chocolate;">sno.</th>
+            <th style="font-size: medium; color: chocolate;">name</th>
+            <th style="font-size: medium; color: chocolate;">mobile no.</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>najmu</td>
+            <td>66666666</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>sehar</td>
+            <td>66666666</td>
+        </tr>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>mausam</td>
+            <td>66666666</td>
+        </tr>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>aliya</td>
+            <td>66666666</td>
+        </tr>
+    </table>
+
+    <table border="1" width="80%" align="center">
+        <tr>
+            <th colspan="2" style="font-size: xx-large; color: blueviolet;">FORM></th>
+        </tr>
+        <tr>
+            <td>groom name</td>
+            <td><input type="text" name="" id="groom"></td>
+        </tr>
+        <tr>
+            <td>bride name</td>
+            <td><input type="text" name="" id="bride"></td>
+        </tr>
+        <tr align="center">
+            <td colspan="2"><input type="button" value="Get Label" onclick="getlabel();"></td>
+        </tr>
+    </table>
+    <script>
+        function getlabel() {
+            let groom = document.getElementById("groom").value;
+            let bride = document.getElementById("bride").value;
+            alert(groom + " weds " + bride);
+        }
+    </script>
+
+    <table border="1" width="50%" align="center">
+        <tr>
+            <td>first number</td>
+            <td><input type="text" name="" id="first"></td>
+        </tr>
+        <tr>
+            <td>second number</td>
+            <td><input type="text" name="" id="second"></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="button" value="sum" style="background-color: blueviolet; color: white; " onclick="sum();">
+            </td>
+        </tr>
+    </table>
+    <script>
+        function sum() {
+            let first = document.getElementById("first").value;
+            let second = document.getElementById("second").value;
+
+            let sum = parseInt(first) + parseInt(second);
+            alert(sum);
+        }
+    </script>
+</body>
+</html>

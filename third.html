@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img    src="https://cdn.pixabay.com/photo/2016/09/05/21/37/cat-1647775_1280.jpg"
+    style="height: 300px; width: 300px;"/>
+    <table border="1" width="80%" align="center">
+        <tr>
+            <th colspan="2"> FORM</th>
+        </tr>
+        <tr>
+            <td>Groom Name</td>
+            <td><input type="text" name="" id="groom"></td>
+        </tr>
+        <tr>
+            <td>Bride Name</td>
+            <td><input type="text" name="" id="bride"></td>
+        </tr>
+        <tr align="center"> 
+            <td colspan="2"><input type="button" value="Get Label" onclick="getlabel();"></td>
+        </tr>
+    </table>
+    <script>
+        function getlabel(){
+            let groom= document.getElementById("groom").value;
+            let bride= document.getElementById("bride").value;
+            alert(groom  + " weds "  + bride);
+        }
+    </script>
+</body>
+</html>
